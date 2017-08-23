@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Not approve account{% endblock %}
+
+{% block content %}
+
+   <h2>Welcome in our system {{ user.first_name }} {{ user.last_name }}</h2>
+    <p>Please wait when our manager approve your account</p>
+    <br>
+    <br>
+    <p><a href="{% url 'logout' %}">Logout?</a></p>
+ {% endblock %}
